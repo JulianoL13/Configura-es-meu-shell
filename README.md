@@ -1,0 +1,1 @@
+# Configura-es-meu-shell
