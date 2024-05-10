@@ -1,31 +1,32 @@
 
-clear co
-echo "Segue abaixo alguns comandos que eu utilizo no meu arquivo Alias"
-echo "Relembrando que esses comandos são focados em distros baseadas em Debian. Planejo fazer uma versão para o Arch em breve"
+clear 
+echo -e "\033[34mSegue abaixo alguns comandos que eu utilizo no meu arquivo Alias"
+echo -e "\033[34mRelembrando que esses comandos são focados em distros baseadas em Debian. Planejo fazer uma versão para o Arch em breve"
 
-echo "# Git"
-echo "alias g='git'"
-echo "alias gck='git checkout'"
-echo "alias gst='git status'"
-echo "alias gps='git push'"
-echo "alias gpl='git pull'"
-echo "alias gcm='git commit'"
+echo -e "\033[34m# Git"
+echo -e "\033[34malias g='git'"
+echo -e "\033[34malias gck='git checkout'"
+echo -e "\033[34malias gst='git status'"
+echo -e "\033[34malias gps='git push'"
+echo -e "\033[34malias gpl='git pull'"
+echo -e "\033[34malias gcm='git commit'"
 
-echo "# Shell"
-echo "alias ls='exa --icons'"
-echo "alias cat='bat'"
-echo "alias find='fd'"
-echo "alias grep='rg'"
-echo "alias ps='procs'"
-echo "alias mkdir='mkdir -pv'"
-echo "alias ips='ip -c -br a'"
+echo -e "\033[34m# Shell"
+echo -e "\033[34malias ls='exa --icons'"
+echo -e "\033[34malias cat='bat'"
+echo -e "\033[34malias find='fd'"
+echo -e "\033[34malias grep='rg'"
+echo -e "\033[34malias ps='procs'"
+echo -e "\033[34malias mkdir='mkdir -pv'"
+echo -e "\033[34malias ips='ip -c -br a'"
 
-echo "### Distros baseadas em debian"
-echo "alias upd='sudo apt update && sudo apt upgrade'"
+echo -e "\033[34m### Distros baseadas em debian"
+echo -e "\033[34malias upd='sudo apt update && sudo apt upgrade'"
+
   
 
 #Instalar algumas dependências
-echo -e "\033[34mDeseja instalar as dependências? (s/n)"
+echo -e "\031[34mDeseja instalar as dependências? (s/n)"
 read resposta
 
 if [ "$resposta" != "${resposta#[Ss]}" ] ;then
