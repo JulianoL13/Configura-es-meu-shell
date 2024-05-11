@@ -1,3 +1,6 @@
+#!/bin/bash
+
+
 MENU() {
 PS3="└──> Menu : "
 options=(
