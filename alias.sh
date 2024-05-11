@@ -31,7 +31,7 @@ done
 
 CONFIG_BASH() {
     #Configurando dependências
-    echo -e "\031[34mDeseja instalar as dependências? (Y/n)"
+    echo -e "\033[31mDeseja instalar as dependências? (Y/n)"
     read resposta
 
     if [ -z "$resposta" ] || [ "$resposta" != "${resposta#[SsYy]}" ] ;then
