@@ -89,3 +89,4 @@ clear
 echo -e "\033[34mSegue abaixo um script que estou desenvolvendo para facilitar a utilização de sistemas Linux, principalmente para iniciantes"
 echo -e "\033[34mRelembrando que esses comandos são focados em distros baseadas em Debian. Planejo fazer uma versão para o Arch em breve"
 echo -e "\033[34mRepositório: https://github.com/JulianoL13/Configura-es-meu-shell.git"
+MENU
