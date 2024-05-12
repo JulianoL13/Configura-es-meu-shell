@@ -8,5 +8,6 @@
 
 ```
 - Run the script as ROOT
+- Aply chmod to script
 - The script was made mainly with Debian and derivatives in mind. However, I plan to update it for other distros in the future
 ```
