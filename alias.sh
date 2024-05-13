@@ -52,7 +52,7 @@ CONFIG_BASH() {
         echo "source ~/alias.txt" >> ~/.bashrc
     elif [ -f ~/.bash_profile ]; then
         echo "source ~/alias.txt" >> ~/.bash_profile
-    elif [ -f ~/.zshrc ]; then
+    if [ -f ~/.zshrc ]; then
         echo "source ~/alias.txt" >> ~/.zshrc
     else
         echo "Nenhum arquivo de perfil do Bash encontrado."
