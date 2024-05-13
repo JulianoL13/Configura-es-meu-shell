@@ -38,7 +38,8 @@ CONFIG_BASH() {
         echo "Instalando dependências..."
         sudo apt install git
         sudo apt install exa
-        sudo apt install bat
+        wget https://github.com/sharkdp/bat/releases/download/v0.9.0/bat_0.9.0_amd64.deb
+        sudo dpkg -i bat_0.9.0_amd64.deb
     else
         echo "Pulando a instalação das dependências..."
     fi    
