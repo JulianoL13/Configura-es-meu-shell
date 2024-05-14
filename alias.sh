@@ -45,14 +45,35 @@ CONFIG_BASH() {
     fi    
 
     #Configurando o bash
-    touch ~/alias.txt
+    mkdir ~/aliasconfig
+    touch ~/aliasconfig/alias.txt
     chmod 777 ~/alias.txt
-    echo -e "# Git\nalias g='git'\nalias gck='git checkout'\nalias gst='git status'\nalias gps='git push'\nalias gpl='git pull'\nalias gcm='git commit'\n# Shell\nalias ls='exa --icons'\nalias cat='bat'\nalias find='fd'\nalias grep='rg'\nalias ps='procs'\nalias mkdir='mkdir -pv'\nalias ips='ip -c -br a'\n### Distros baseadas em debian\nalias upd='sudo apt update && sudo apt upgrade'" >> ~/alias.txt
+    echo -e "# Git Aliases
+alias g='git'
+alias gck='git checkout'
+alias gst='git status'
+alias gps='git push'
+alias gpl='git pull'
+alias gcm='git commit'
+
+# Shell Aliases
+alias ls='exa --icons'
+alias cat='bat'
+alias mkdir='mkdir -pv'
+alias ips='ip -c -br a'
+
+# Debian-based Distros
+alias upd='sudo apt update && sudo apt upgrade'
+" >> ~/alias.txt
 
     if [ -f ~/.bashrc ]; then
         echo "source ~/alias.txt" >> ~/.bashrc
     elif [ -f ~/.bash_profile ]; then
         echo "source ~/alias.txt" >> ~/.bash_profile
+    else
+        echo "Nenhum arquivo de perfil do Bash encontrado."
+    fi
+
     if [ -f ~/.zshrc ]; then
         echo "source ~/alias.txt" >> ~/.zshrc
     else
